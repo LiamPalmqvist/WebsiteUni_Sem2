@@ -12,3 +12,10 @@ body {
     margin-right: auto;
     overflow: hidden;
 }
+
+a:link {
+    color:white;
+}
+a:visited {
+    color:white;
+}
