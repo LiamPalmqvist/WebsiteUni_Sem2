@@ -64,4 +64,7 @@ switch (day)
 
     case 6: console.log("Sunday");
     break; 
+
+    default: 
+    break;
 }
