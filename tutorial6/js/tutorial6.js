@@ -65,3 +65,31 @@ num_array = [12, 9, 33, 8, 71, 2, 41, 5];
 console.log(num_array.sort());
 console.log(num_array.sort((a,b)=>a-b))
 console.log(num_array.sort((a,b)=>b-a))
+
+
+// My own research
+// anonymous functions
+console.log( function(x, y) {return x*y;} )
+// This returns the product of x and y without having to
+// call a named function to do this once.
+
+// Essentially, we do this for functions in which we only need to use
+// once.
+
+// We can also overload the function without any errors occuring
+console.log(multiply());
+console.log(multiply(1, 2, 3));
+// The first one returns the Not a Number variable (NaN)
+// The last one returns the product of the first two parameters
+console.log(multiply(a = 1, 2, b = 4))
+// And this one returns the product of a and b as they are named
+// variabled
+
+
+function multiplyx(a = 0, b = 1)
+{
+    return a*b;
+}
+// By default this will return 0 because the variables have default
+// states, as defined in the function
+console.log(multiplyx());
